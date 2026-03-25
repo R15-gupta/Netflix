@@ -1,0 +1,222 @@
+body{
+    background:#000;
+    color: #fff;
+ 
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+.container p{
+    font-size: 30px;
+    font-weight: 400px;
+    color: white;
+    text-align: center;
+    font-family:  sans-serif;
+}
+.header-group{
+    text-align: right;
+    top: 2px;   
+}
+.logo{
+    width:200px;
+    height:60px;
+    cursor: pointer;
+}
+select{
+    background: transparent;
+    color:antiquewhite;
+    border: 1px solid grey;
+    padding: 2px;
+    width: 7%;
+    border-radius: 5px;
+    text-align:center;
+}
+option{
+    color:black;
+}
+button:hover{
+    color:aliceblue;
+}
+button{
+    background-color: red;
+    border-radius: 4px;
+    border:1px solid red;
+    width: 7%;
+     color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+button:active{
+    background-color: rgba(211, 61, 44, 0.986);
+}
+.container{
+
+    width:100%;
+    height:100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding: 2px;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(d:/images/images/backnet.jpg);
+    
+}
+input{
+    color: whitesmoke;
+    height: 60px;
+    width:30%;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left: 20px;
+    background-color: transparent;
+    font-size: medium;
+}
+.placeholder{ 
+    font-size: 20px;
+}
+.form-group{
+gap: 20px;
+text-align: center;
+margin-bottom: 20%;
+}
+/*-----------------fetures----------------*/
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+    background-color: black;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 30px;
+}
+.img-col img{
+    display:block;
+    width: 80%;
+    margin-bottom: 30px;
+}
+.text-col h2{
+    font-size:40px;
+    color: aliceblue;
+    font-family: sans-serif;
+   
+}
+/*--------faq---------*/
+.faq  {
+    padding: 10px 10%;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+    background: black;
+}
+input[type=radio]{
+    display: none;
+   
+}
+.faq h2{
+    color: white;  
+}
+.accordion{
+    margin:60px auto;
+    max-width: 750px;
+} 
+.accordion li{
+  width:100%;
+  padding:5px;
+  padding: 5px;
+list-style: none;
+}
+.accordion li label{
+    padding-right: 100px;
+   cursor: pointer;
+   display: flex;
+    font-weight: 500;
+    position: relative;
+   background: #303030;
+padding: 8px;
+color: white;;
+}
+label::after{
+    content: '+';
+    position: absolute;
+    right:20px;
+    font-size: 24px;
+    transition: transform 0.5s;
+}
+.accordion .content{
+   overflow: hidden;
+    background: #303030;
+    padding: 0 20px;
+    text-align: left;
+    max-height: 0;
+   transition: max-height 0.5s,padding 0.5s;
+
+}
+.accordion input[type="radio"]:checked + label+ .content{
+    max-width:800px;
+    padding: 30px 20px;
+}
+.content p{
+color:white;
+margin-bottom: 50%;
+font-size: 80%;
+}
+small{
+    color:white;
+    font-size: 25px;
+}
+button a{
+    text-decoration: none;
+    color:white;
+}
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.faq form-group{
+    margin-bottom: 20px;
+    top: 20px;
+}
+/*----------footer--------------*/
+.footer{
+    padding: 50px 10% 10px;
+    border-top: 6px solid #333;
+    background: black;
+    color:#777;
+}
+.footer h2{
+  margin-bottom: 30px;
+   font-weight: 400;
+}
+.footer .col{
+    flex-basis:25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color:#777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+/*-----------media qerry for small screen----------*/
+@media only screen and (max-width:600px) {
+    
+}
